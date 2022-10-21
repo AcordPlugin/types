@@ -1,0 +1,1 @@
+require("@acord/modules/common/ActivityStore/getPrimaryActivity")("123")

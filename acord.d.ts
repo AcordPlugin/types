@@ -1,3 +1,16 @@
+declare module "@acord" {
+  export = { modules }
+}
+
+//#region modules
+const modules = { common };
+
+//#region common
+const common = { ActivityStore };
+
+//#region ActivityStore
+const ActivityStore = { getActivities, getPrimaryActivity, getAllApplicationActivities };
+
 type Activity = {
   created_at: string,
   emoji?: {
@@ -26,21 +39,21 @@ declare module "@acord/modules/common/ActivityStore/getAllApplicationActivities"
   export = getAllApplicationActivities;
 }
 
-const ActivityStore = { getActivities, getPrimaryActivity, getAllApplicationActivities };
 declare module "@acord/modules/common/ActivityStore" {
   export = ActivityStore;
 }
-
-const common = { ActivityStore };
+//#endregion
 declare module "@acord/modules/common" {
   export = common;
 }
 
-const modules = { common };
+//#endregion
+
+
+
+
 declare module "@acord/modules" {
   export = modules;
 }
+//#endregion
 
-declare module "@acord" {
-  export = { modules }
-}
