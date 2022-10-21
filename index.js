@@ -1,2 +1,2 @@
-const x = require("@acord-test/modules/common/ActivityStore/cheats");
-x
+const x = require("@acord-test/modules/common");
+x.
