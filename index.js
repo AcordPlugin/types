@@ -47,6 +47,12 @@ const acord = {
   },
   modules: {
     common: {
+      GuildStore: {
+        getGuild: () => null,
+        getGuildCount: () => null,
+        getGuilds: () => null,
+        __getLocalVars: () => null,
+      },
       ActivityStore: {
         findActivity: () => null,
         getActivities: () => null,
