@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/AcordPlugin/acord-types/issues"
   },
-  "homepage": "https://github.com/AcordPlugin/acord-types#readme"
+  "homepage": "https://github.com/AcordPlugin/acord-types#readme",
+  "dependencies": {
+    "regex-presets": "^1.1.0"
+  }
 }
